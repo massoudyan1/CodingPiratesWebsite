@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SidenavComponent } from './sidenav.component';
+import { TopmenuComponent } from './topmenu.component';
 
-describe('SidenavComponent', () => {
-  let component: SidenavComponent;
-  let fixture: ComponentFixture<SidenavComponent>;
+describe('TopmenuComponent', () => {
+  let component: TopmenuComponent;
+  let fixture: ComponentFixture<TopmenuComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [SidenavComponent]
+      imports: [TopmenuComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(SidenavComponent);
+    fixture = TestBed.createComponent(TopmenuComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

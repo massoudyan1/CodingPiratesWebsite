@@ -1,0 +1,9 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" [opened]="leftmenuActive">
+    Drawer content
+    <p>leftmenu works!</p>
+  </mat-drawer>
+  <mat-drawer-content>
+    <app-topmenu (setLeftmenuActive)="leftmenuActive=$event"></app-topmenu>
+  </mat-drawer-content>
+</mat-drawer-container>
