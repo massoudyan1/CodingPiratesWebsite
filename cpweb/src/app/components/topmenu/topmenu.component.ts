@@ -11,7 +11,6 @@ import {MatIconModule} from '@angular/material/icon';
   styleUrl: './topmenu.component.scss'
 })
 export class TopmenuComponent {
-  @Input() subViews: ;
 
   leftMenuActiveStatus = false;
   @Output() setLeftmenuActive = new EventEmitter<boolean>();

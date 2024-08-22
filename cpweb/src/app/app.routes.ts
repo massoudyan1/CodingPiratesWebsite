@@ -14,6 +14,9 @@ import { AboutMissionComponent } from './view/public/about/about-mission/about-m
 import { ActivitiesComponent } from './view/public/activities/activities.component';
 import { ActivitiesCalendarComponent } from './view/public/activities/activities-calendar/activities-calendar.component';
 import { ActivitiesHighlightsComponent } from './view/public/activities/activities-highlights/activities-highlights.component';
+import { ContactComponent } from './view/public/contact/contact.component';
+import { ContactFormComponent } from './view/public/contact/contact-form/contact-form.component';
+import { ContactCvrInfoComponent } from './view/public/contact/contact-cvr-info/contact-cvr-info.component';
 
 export const routes: Routes = [
   { path: '', component: HomepageComponent },
@@ -39,10 +42,9 @@ export const routes: Routes = [
 
   ]},
 
-  { path: 'kontakt', component: KontaktComponent, children: [
-    { path: 'kontaktformular', component: KontaktFormComponent },
-    { path: 'lokation', component: KontaktLokationComponent },
-    { path: 'faq', component: KontaktFaqComponent },
+  { path: 'kontakt', component: ContactComponent, children: [
+    { path: 'kontaktformular', component: ContactFormComponent },
+    { path: 'lokation', component: ContactCvrInfoComponent },
   ]},
 
   { path: '**', redirectTo: '' } // Fallback route
